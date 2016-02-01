@@ -1,0 +1,27 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.digits.sdk.android']/class[@name='DigitsErrorCodes']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.digits.sdk.android']/class[@name='DigitsActivityDelegateImpl']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.digits.sdk.android']/class[@name='DigitsControllerImpl']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.digits.sdk.android']/class[@name='CountryInfo']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.digits.sdk.android']/class[@name='AuthConfig']" name="visibility">public</attr>
+
+  <!--attr path="/api/package[@name='com.digits.sdk.android']/class[@name='ContactsCallback']/method[@name='failure']" name="managedName">_Failure</attr>
+  <attr path="/api/package[@name='com.digits.sdk.android']/class[@name='ContactsCallback']/method[@name='success']" name="managedName">ContactSuccess</attr-->
+
+  <attr path="/api/package[@name='com.digits.sdk.android']/class[@name='ContactsUploadService']" name="extends">mono.android.app.IntentService</attr>
+
+  <attr path="/api/package[@name='com.digits.sdk.android']/interface[@name='ErrorCodes']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.digits.sdk.android']/interface[@name='DigitsController']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.digits.sdk.android']/interface[@name='ActivityLifecycle']" name="visibility">public</attr>
+
+  <remove-node path="/api/package[@name='com.digits.sdk.android']/class[@name='ContactsCallback']/method[@name='failure']"/>
+  <remove-node path="/api/package[@name='com.digits.sdk.android']/class[@name='ContactsCallback']/method[@name='success']"/>
+  <remove-node path="/api/package[@name='com.digits.sdk.android']/class[@name='DigitsSession.Serializer']"/>
+</metadata>

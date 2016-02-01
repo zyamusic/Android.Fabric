@@ -1,0 +1,20 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.twitter.sdk.android.core.internal']/class[@name='TwitterApiConstants.Errors']/field[@name='ERRORS']" name="managedName">ERRORS</attr>
+  <attr path="/api/package[@name='com.twitter.sdk.android.core.models']/class[@name='Coordinates']/field[@name='coordinates']" name="managedName">CoordinateList</attr>
+
+  <attr path="/api/package[@name='com.twitter.sdk.android.core.internal.oauth']/class[@name='OAuthService']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.twitter.sdk.android.core.models']/class[@name='Entity']" name="visibility">public</attr>
+
+
+  <remove-node path="/api/package[@name='com.twitter.sdk.android.core']/class[@name='AppSession.Serializer']"/>
+  <remove-node path="/api/package[@name='com.twitter.sdk.android.core.internal.scribe']/class[@name='ScribeEvent.Transform']"/>
+  <remove-node path="/api/package[@name='com.twitter.sdk.android.core']/class[@name='TwitterSession.Serializer']"/>
+  <remove-node path="/api/package[@name='com.twitter.sdk.android.core']/class[@name='TwitterCore']/method[@name='CompareTo']"/>
+</metadata>
