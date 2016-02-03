@@ -62,11 +62,11 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <ItemGroup>
     <LibraryProjectZip Include="Jars\twitter-1.12.0.aar" />
+    <LibraryProjectZip Include="Jars\twitter-text-1.13.0.jar" />
+    <LibraryProjectZip Include="Jars\tweet-ui-1.9.0.aar" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\picasso-2.5.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\twitter-text-1.13.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\tweet-ui-1.9.0.aar" />
     <EmbeddedReferenceJar Include="Jars\tweet-composer-1.0.2.aar" />
   </ItemGroup>
   <ItemGroup>
