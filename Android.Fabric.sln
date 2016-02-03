@@ -9,12 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Android.TwitterCore", "Andr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Android.Answers", "Android.Answers\Android.Answers.csproj", "{BEA50CBB-30C6-4D91-9BB2-CA71E0F04879}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Android.Twitter", "Android.Twitter\Android.Twitter.csproj", "{168A4CFB-B8BC-4500-9055-E64A0A372C62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{168A4CFB-B8BC-4500-9055-E64A0A372C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168A4CFB-B8BC-4500-9055-E64A0A372C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168A4CFB-B8BC-4500-9055-E64A0A372C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168A4CFB-B8BC-4500-9055-E64A0A372C62}.Release|Any CPU.Build.0 = Release|Any CPU
 		{309AA48C-FF52-4806-9925-07043476DC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{309AA48C-FF52-4806-9925-07043476DC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{309AA48C-FF52-4806-9925-07043476DC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
