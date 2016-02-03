@@ -4,13 +4,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{168A4CFB-B8BC-4500-9055-E64A0A372C62}</ProjectGuid>
+    <ProjectGuid>{9A3F7151-7A5D-4491-AE72-1A532D6EF082}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Android.Twitter</RootNamespace>
+    <RootNamespace>Android.TweetComposer</RootNamespace>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <AssemblyName>Android.Twitter</AssemblyName>
+    <AssemblyName>Android.TweetComposer</AssemblyName>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -38,21 +38,14 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="Xamarin.Android.Support.v4">
-      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
-      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Additions\Com.Twitter.Sdk.Android.Twitter.cs" />
+    <Compile Include="Additions\Com.Twitter.Sdk.Android.Tweetcomposer.Tweetcomposer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
     <None Include="Jars\AboutJars.txt" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -61,28 +54,22 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\twitter-1.12.0.aar" />
+    <LibraryProjectZip Include="Jars\tweet-composer-1.0.2.aar" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Android.Digits\Android.Digits.csproj">
-      <Project>{50F4FA62-6359-44DD-B2C0-A4B35D86DCF5}</Project>
-      <Name>Android.Digits</Name>
+    <EmbeddedReferenceJar Include="Jars\twitter-text-1.13.0.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Android.Fabric\Android.Fabric.csproj">
+      <Project>{4B32CD16-ADD9-4727-82B9-DBD19C175DE9}</Project>
+      <Name>Android.Fabric</Name>
     </ProjectReference>
     <ProjectReference Include="..\Android.TwitterCore\Android.TwitterCore.csproj">
       <Project>{309AA48C-FF52-4806-9925-07043476DC4F}</Project>
       <Name>Android.TwitterCore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Android.Fabric\Android.Fabric.csproj">
-      <Project>{4B32CD16-ADD9-4727-82B9-DBD19C175DE9}</Project>
-      <Name>Android.Fabric</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Android.TweetUI\Android.TweetUI.csproj">
-      <Project>{02B60D8B-D879-459B-B982-C62EC6512BCC}</Project>
-      <Name>Android.TweetUI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Android.TweetComposer\Android.TweetComposer.csproj">
-      <Project>{9A3F7151-7A5D-4491-AE72-1A532D6EF082}</Project>
-      <Name>Android.TweetComposer</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\picasso-2.5.2.jar" />
   </ItemGroup>
 </Project>
