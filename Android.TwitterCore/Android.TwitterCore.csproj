@@ -59,6 +59,9 @@
     <EmbeddedReferenceJar Include="Jars\okhttp-2.7.2.jar" />
     <EmbeddedReferenceJar Include="Jars\okio-1.6.0.jar" />
     <EmbeddedReferenceJar Include="Jars\okhttp-urlconnection-2.7.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\rxjava-1.1.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\appengine-api-1.0-sdk-1.9.31.jar" />
+    <EmbeddedReferenceJar Include="Jars\animal-sniffer-annotations-1.14.jar" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\twitter-core-1.6.3.aar" />
