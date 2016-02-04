@@ -56,6 +56,7 @@
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\retrofit-1.8.0.jar" />
     <EmbeddedReferenceJar Include="Jars\gson-2.2.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\okhttp-2.7.2.jar" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\twitter-core-1.6.3.aar" />
