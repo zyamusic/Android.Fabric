@@ -58,6 +58,7 @@
     <EmbeddedReferenceJar Include="Jars\gson-2.2.4.jar" />
     <EmbeddedReferenceJar Include="Jars\okhttp-2.7.2.jar" />
     <EmbeddedReferenceJar Include="Jars\okio-1.6.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\okhttp-urlconnection-2.7.2.jar" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\twitter-core-1.6.3.aar" />
