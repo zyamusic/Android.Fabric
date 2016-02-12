@@ -13,6 +13,20 @@
   <attr path="/api/package[@name='com.twitter.sdk.android.core.models']/class[@name='Entity']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.twitter.sdk.android.core']/class[@name='AuthToken']" name="visibility">public</attr>
 
+  <!-- path="/api/package[@name='com.twitter.sdk.android.core.services']/interface[@name='ConfigurationService']" name="hidden">true</attr-->
+ <!--remove-node path="/api/package[@name='com.twitter.sdk.android.core.services']/interface[@name='ConfigurationService']"/-->
+
+<!--add-node path="/api/package[@name='com.twitter.sdk.android.core.services']/interface[@name='ConfigurationService']">
+
+		<interface abstract="true" deprecated="not deprecated" final="false" name="ConfigurationService" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="configuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.twitter.sdk.android.core.Callback&lt;com.twitter.sdk.android.core.models.Configuration&gt;">
+</parameter>
+</method>
+</interface>
+</add-node-->
+
+  <!--remove-node path="/api/package[@name='com.twitter.sdk.android.core.services']/interface[@name='ConfigurationService']"/-->
 
   <remove-node path="/api/package[@name='com.twitter.sdk.android.core']/class[@name='AppSession.Serializer']"/>
   <remove-node path="/api/package[@name='com.twitter.sdk.android.core.internal.scribe']/class[@name='ScribeEvent.Transform']"/>

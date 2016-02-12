@@ -56,11 +56,6 @@
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\retrofit-1.8.0.jar" />
     <EmbeddedReferenceJar Include="Jars\gson-2.2.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\okhttp-2.7.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\okio-1.6.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\okhttp-urlconnection-2.7.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\rxjava-1.1.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\appengine-api-1.0-sdk-1.9.31.jar" />
     <EmbeddedReferenceJar Include="Jars\animal-sniffer-annotations-1.14.jar" />
   </ItemGroup>
   <ItemGroup>
@@ -71,5 +66,10 @@
       <Project>{4B32CD16-ADD9-4727-82B9-DBD19C175DE9}</Project>
       <Name>Android.Fabric</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ReferenceJar Include="Jars\okio-1.6.0.jar" />
+    <ReferenceJar Include="Jars\okhttp-urlconnection-2.7.2.jar" />
+    <ReferenceJar Include="Jars\okhttp-2.7.2.jar" />
   </ItemGroup>
 </Project>
